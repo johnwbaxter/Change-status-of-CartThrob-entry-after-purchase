@@ -89,10 +89,10 @@ class Change_status_of_cartthrob_entry_after_purchase_ext
         /**
          *cartthrob_on_authorize
          *
-         * @access    public
+         * @access    private
          * @return    void
          */
-    function cartthrob_on_authorize()
+    private function cartthrob_on_authorize()
 	{
 
     	foreach ($this->EE->cartthrob->cart->order('items') as $item)
